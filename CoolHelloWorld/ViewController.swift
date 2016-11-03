@@ -9,6 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var coolBackground: UIImageView!
+    @IBOutlet var message: UIImageView!
+    @IBOutlet var welcomeText: UIButton!
+    
+    @IBAction func welcomePress(_ sender: Any) {
+        coolBackground.isHidden = false
+        message.isHidden = false
+        welcomeText.isHidden = true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
