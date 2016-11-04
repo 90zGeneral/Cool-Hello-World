@@ -15,8 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet var welcomeText: UIButton!
     
     @IBAction func welcomePress(_ sender: Any) {
-        coolBackground.isHidden = false
-        message.isHidden = false
+        if coolBackground.isHidden {
+            coolBackground.isHidden = false
+            message.isHidden = false
+        }else {
+            coolBackground.isHidden = true
+            message.isHidden = true
+        }
     }
     
 
